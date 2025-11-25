@@ -18,7 +18,7 @@ if [[ "$DISTRO_ID" == "amzn" ]]; then
   sudo yum install -y awscli httpd unzip curl
 
   echo "📥 Downloading index.html from S3..."
-  aws s3 cp s3://ed-web-config-project/index.html /var/www/html/
+  aws s3 cp s3://s3-vpc-deployment/index.html /var/www/html/
 
   echo "🚀 Starting and enabling Apache..."
   sudo systemctl enable httpd
@@ -41,7 +41,7 @@ elif [[ "$DISTRO_ID" == "ubuntu" ]]; then
   fi
 
   echo "📥 Downloading index.html from S3..."
-  aws s3 cp s3://ed-web-config-project/index.html /var/www/html/
+  aws s3 cp s3://s3-vpc-deployment/index.html /var/www/html/
 
   echo "🚀 Starting and enabling Apache..."
   sudo systemctl enable apache2

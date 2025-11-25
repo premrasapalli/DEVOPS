@@ -10,10 +10,10 @@
       "Action": "sts:AssumeRole",
       "Condition": {
         "StringEquals": {
-          "aws:SourceAccount": "123456789012"
+          "aws:SourceAccount": "687348855614"
         },
         "ArnLike": {
-          "aws:SourceArn": "arn:aws:logs:us-west-2:123456789012:*"
+          "aws:SourceArn": "arn:aws:logs:us-west-2:687348855614:*"
         }
       }
     }

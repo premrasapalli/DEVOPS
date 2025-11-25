@@ -12,7 +12,7 @@
         "logs:DescribeLogStreams"
       ],
       "Resource": [
-        "arn:aws:logs:us-west-2:123456789012:log-group:/aws/vpc/flowlogs*"
+        "arn:aws:logs:us-west-2:687348855614:log-group:/aws/vpc/flowlogs*"
       ]
     }
   ]
